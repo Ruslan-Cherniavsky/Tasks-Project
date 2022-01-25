@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|VT323|Dhurjati">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href=".\css\random.css">
+    <link rel="stylesheet" href=".\css\index.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="backGround">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="main-header col-5">
+                    <h1>My Task Board</h1>
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-5" id="mainForm">
+                    <h2></h2>
+                    <form id="form" class="row g-2">
+                        <div class="col-12">
+                            <label for="title" class="form-label"></label>
+                            <input type="text" class="form-control" id="title" placeholder="Title" />
+                        </div>
+                        <div class="col-12">
+                            <label for="note" class="form-label"></label>
+                            <textarea type="text" class="form-control" id="note" rows="10" placeholder="Note"></textarea>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="date" min="2021-11-01" max="2041-12-31" />
+                        </div>
+
+                        <div class="col-6">
+                            <label for="time" class="form-label">Time</label>
+                            <input type="time" class="form-control" id="time" placeholder="Time" />
+                        </div>
+
+
+                        <div class="col-6">
+                            <button type="button" style="height: 100%" class="btn btn-primary mb-1 col-12" id="addTask">
+                           Add Task
+                       </button>
+                        </div>
+
+                        <div class="col-6">
+                            <button type="button" style="height: 100%" class="btn btn-primary mb-1 col-12" id="reset">
+                          Reset
+                          </button>
+                        </div>
+                </div>
+
+                </form>
+            </div>
+
+            <!--  list -->
+            <div class="container">
+                <div id="taskContainer" class="row justify-content-center"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./js/getUI.js"></script>
+<script src="./js/getStateObject.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

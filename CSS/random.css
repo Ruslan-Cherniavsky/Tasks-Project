@@ -1,0 +1,99 @@
+.taskMoving1 {
+    opacity: 1;
+    animation: movingRight1 0.5s;
+}
+
+@keyframes movingRight1 {
+    0% {
+        transform: translateX(0%);
+    }
+    33% {
+        /* transform: translateY(-100%); */
+    }
+    66% {
+        transform: translateX(100%) translateY(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.taskMoving2 {
+    opacity: 1;
+    animation: movingRight2 0.5s;
+}
+
+@keyframes movingRight2 {
+    0% {
+        transform: translateX(0%);
+    }
+    33% {
+        /* transform: translateY(-100%); */
+    }
+    66% {
+        transform: translateX(80%) translateY(70%);
+    }
+    100% {
+        transform: translateX(-80%);
+    }
+}
+
+.taskMoving3 {
+    opacity: 1;
+    animation: movingRight3 0.5s;
+}
+
+@keyframes movingRight3 {
+    0% {
+        transform: translateX(0%);
+    }
+    33% {
+        /* transform: rotateY(10deg); */
+    }
+    66% {
+        transform: translateX(120%) translateY(90%);
+    }
+    100% {
+        transform: translateX(-90%);
+    }
+}
+
+.taskMoving4 {
+    opacity: 1;
+    animation: movingRight4 0.5s;
+}
+
+@keyframes movingRight4 {
+    0% {
+        transform: translateX(0%);
+    }
+    33% {
+        /* transform: translateY(-100%); */
+    }
+    66% {
+        transform: translateX(110%) translateY(60%);
+    }
+    100% {
+        transform: translateX(-60%);
+    }
+}
+
+.taskMoving5 {
+    opacity: 1;
+    animation: movingRight5 0.5s;
+}
+
+@keyframes movingRight5 {
+    0% {
+        transform: translateX(0%);
+    }
+    33% {
+        /* transform: translateY(-100%); */
+    }
+    66% {
+        transform: translateX(90%) translateY(120%);
+    }
+    100% {
+        transform: translateX(-110%);
+    }
+}

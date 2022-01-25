@@ -1,0 +1,333 @@
+@font-face {
+    src: url(./Fonts/ka1.ttf);
+    font-family: nos;
+}
+
+body {
+    font-family: "VT323";
+    font-size: 1.4em;
+    background: linear-gradient(360deg, #020024, #9739f2, #00d4ff);
+    background-size: 900% 900%;
+    -webkit-animation: AnimationName 18s ease infinite;
+    -moz-animation: AnimationName 18s ease infinite;
+    animation: AnimationName 18s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+
+@keyframes flow {
+    from {
+        transform: scaleY(0%)
+    }
+    to {
+        transform: scaleY(100%)
+    }
+}
+
+.container {
+    opacity: 100%;
+}
+
+.main-header {
+    opacity: 100%;
+    margin: 1% 0% 2% 0%;
+    animation: flow 0.4s ease-out;
+}
+
+.main-header h1 {
+    font-family: nos;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    background-color: rgba(165, 165, 165, 0.342);
+    opacity: 90%;
+    padding: 1% 0% 1.4% 0%;
+    border-radius: 10px;
+    text-shadow: 0px 0px 0px white;
+    border: 3px solid violet;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 0px 0px 6px;
+}
+
+#mainForm {
+    opacity: 90%;
+}
+
+#form {
+    position: relative;
+    background-color: rgba(165, 165, 165, 0.342);
+    display: flex;
+    text-align: center;
+    padding: 0% 5% 5% 5%;
+    margin: 0% 0% 6% 0%;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 0px 0px 8px white;
+    border: 3px solid violet;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 0px 0px 6px;
+    animation: flow 0.4s ease-out;
+}
+
+#title {
+    display: flex;
+    background-image: repeating-linear-gradient(to bottom, rgb(26, 198, 204), rgb(26, 198, 204) 7%, rgb(100, 100, 100) 10%);
+    background-attachment: scroll;
+    background-size: 10% 30px;
+    font-size: 1.22em;
+    color: white;
+    text-shadow: 0px 0px 8px white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 0px 0px 6px;
+}
+
+#date {
+    display: flex;
+    background-image: repeating-linear-gradient(to bottom, rgb(26, 198, 204), rgb(26, 198, 204) 7%, rgb(100, 100, 100) 10%);
+    background-attachment: scroll;
+    background-size: 10% 30px;
+    font-size: 1.22em;
+    color: white;
+    opacity: 70%;
+    text-shadow: 0px 0px 8px white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 0px 0px 6px;
+}
+
+#time {
+    display: flex;
+    background-image: repeating-linear-gradient(to bottom, rgb(26, 198, 204), rgb(26, 198, 204) 7%, rgb(100, 100, 100) 10%);
+    background-attachment: scroll;
+    background-size: 10% 30px;
+    font-size: 1.22em;
+    color: white;
+    opacity: 70%;
+    text-shadow: 0px 0px 8px white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 0px 0px 6px;
+}
+
+#note {
+    display: flex;
+    height: 200px;
+    background-image: repeating-linear-gradient(to bottom, rgb(26, 198, 204), rgb(26, 198, 204) 7%, rgb(100, 100, 100) 10%);
+    background-attachment: scroll;
+    background-size: 10% 30px;
+    font-size: 1.22em;
+    color: white;
+    text-shadow: 0px 0px 8px white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 0px 0px 6px;
+}
+
+#addTask {
+    font-size: 1.2em;
+}
+
+#reset {
+    font-size: 1.2em;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.671);
+    opacity: 1;
+}
+
+textarea {
+    overflow-y: auto;
+    height: 100px;
+    resize: none;
+}
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*
+Created Tasks Ui
+*/
+
+#taskContainer {
+    height: 270px;
+}
+
+.task {
+    opacity: 90%;
+}
+
+.task-body {
+    text-align: center;
+    color: white;
+    background-color: rgba(165, 165, 165, 0.342);
+    border-radius: 10px;
+    color: rgb(145, 238, 233);
+    text-shadow: 0px 0px 0px white;
+    border: 3px solid violet;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 0px 0px 6px;
+    padding: 5% 3% 4% 11%;
+    margin-bottom: 7%;
+}
+
+.task-note {
+    width: 90%;
+    height: 200px;
+    overflow: auto;
+    background: url("./img/television-static.gif") fixed center;
+    text-align: left;
+    background-size: 10% 30px;
+    font-size: 1.22em;
+    color: white;
+    text-shadow: 0px 0px 8px white;
+    border: solid 3px rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2), 0px 0px 6px;
+    padding-left: 5%;
+}
+
+.task-title {
+    font-family: nos;
+    width: 90%;
+    height: 50px;
+    background-size: 10% 30px;
+    text-align: center;
+    font-size: 1.22em;
+    color: white;
+    text-shadow: 0px 0px 8px white;
+}
+
+.task-date {
+    width: 90%;
+    height: 40px;
+    text-align: left;
+    background-size: 10% 30px;
+    font-size: 1.22em;
+    color: white;
+    text-shadow: 0px 0px 8px white;
+    padding-left: 5%;
+}
+
+.task-time {
+    width: 90%;
+    height: 40px;
+    text-align: left;
+    background-size: 10% 30px;
+    font-size: 1.22em;
+    color: white;
+    text-shadow: 0px 0px 8px white;
+    padding-left: 5%;
+}
+
+.buttonOnHover {
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-right: 7%;
+    margin-top: 1%;
+}
+
+.task:hover .buttonOnHover {
+    opacity: 1;
+}
+
+.fadeIn {
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    opacity: 1;
+    animation: fadeout 0.5s;
+}
+
+.fadeOut div {
+    background-color: rgb(210, 30, 99);
+}
+
+@keyframes fadeout {
+    100% {
+        opacity: 0;
+        transform: translate(90%, 100%);
+    }
+}
+
+ion-icon {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px white;
+    --ionicon-stroke-width: 32px;
+}
+
+.errorMasage {
+    background: url("./img/S9fQ3Q.gif") fixed center;
+    font-size: 4em;
+    color: rgb(21, 255, 0);
+    position: absolute;
+    width: 90%;
+    height: 97%;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.errorMasageAnim {
+    opacity: 1;
+    animation: fadeoutError 1s;
+}
+
+@keyframes fadeoutError {
+    100% {
+        opacity: 0;
+    }
+}
